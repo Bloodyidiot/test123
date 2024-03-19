@@ -1,0 +1,82 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=sec, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="home style.css">
+    <link rel="stylesheet" href="<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.2/css/fontawesome.min.css" integrity="sha384-BY+fdrpOd3gfeRvTSMT+VUZmA728cfF9Z2G42xpaRkUGu2i3DyzpTURDo5A6CaLK" crossorigin="anonymous">">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css">
+</head>
+<body>
+    <section class="header" id="header">
+        <div class="nav-bar">
+            <div class="logo">
+                <a href="#"> Ali Reccycling <span>.</span></a>
+            </div>
+            <div class="menu">
+                <ul>
+                    <li> <a href="#" class="active">Home</a></li>
+                    <li> <a href="#">Statment</a></li>
+                    <li> <a href="#">Logout</a></li>
+                </ul>
+            </div>
+            <div class="social-media">
+                <ul>
+                    <li><a href="#"><i class="fab fa-facebook"></i></a></li>
+                    <li><a href="#"><i class="fa-duotone fa-envelope" style="--fa-primary-color: #ff2600; --fa-primary-opacity: 5; --fa-secondary-color: #ebebeb; --fa-secondary-opacity: 80;"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-whatsapp" style="color: #96d35f;"></i></a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="hero">
+            <div class="row">
+                <div class="left-sec">
+                    <div class="content">
+                        <h2><span>Ali</span><br>Recycling</h2>
+                        <p>It is an Purchae Sales Expense Tracker</p>
+                    </div>
+                    <button class="discover-btn">
+                        <a href="#">discover</a><span><i class="fa <i class="fa fa-arrow-circle-o-right"></i>"></i></span>
+                    </button>
+                    <div class="Information">
+                    <div class="production">
+                        <p>Properitor</p>
+                        <h2>Mohamed Ali Jinna</h2>
+                    </div>
+                    <div class="production">
+                        <p>Address</p>
+                        <h2>Simpang,801,Burnei </h2>
+                    </div>
+                </div>
+            </div>
+            <div class="right-sec">
+                <div class="my car">
+                    <div><img src="#"></div>
+                    <div><img src="#"></div>
+                    <div><img src="#"></div>
+                    <div><img src="#"></div>
+                    <div><img src="#"></div>
+                </div>
+        </div>
+            </div>
+    </div>
+    </section>  
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>  
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function()
+        {
+            $(".my-car").slick({
+                autoplay:true,
+                dots:true,
+                speed:1000,
+                custompaging : function(slider,i){
+                    var thumn = $ (slider.$slider[i]).data();
+                    return'<a>'+(i+1)+'</a>';
+                }
+            })
+        })
+    </script>
+</body>
+</html>
